@@ -1,0 +1,36 @@
+{
+  "name": "skagen",
+  "version": "1.0.0",
+  "description": "Proyecto de Punto de venta piezas automotrices",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --exec babel-node --presets env,stage-2 src/index.js",
+    "dev": "nodemon --exec babel-node --presets env,stage-2 bin/dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "mongo",
+    "mongoose"
+  ],
+  "author": "Brandom",
+  "license": "ISC",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "body-parser": "^1.18.3",
+    "cloudinary": "^1.14.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "fs-extra": "^7.0.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.4.20",
+    "multer": "^1.4.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-transform-async-to-generator": "^7.4.0",
+    "nodemon": "^1.18.10"
+  }
+}

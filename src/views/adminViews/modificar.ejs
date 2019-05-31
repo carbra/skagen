@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 ">
+        <!-- mis estilos -->
+    <link rel="stylesheet" href="../../../public/css/index.css">
+        <!-- link de bootstrap -->
+    <!-- <link type="text/css" rel="stylesheet" href="../../public/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Modificar</title>
+  </head>
+  <body>
+    <div class="container">
+
+    <form class="mx-auto col-md-7 "  action="/update/<%= pro._id%>"  method="POST"> 
+      <div class="form-group">
+        <label for="" class="text-bold">Armadora</label><br>
+        <input type="text" value="<%= pro.armadora%>" name="armadora" class=" agregarP form-control inputs border border-top-0 border-right-0 border-left-0 " id="armadora" placeholder="Nombre de la armadora">
+      </div>
+      <div class="form-group">
+        <label for="" class="text-bold">Modelo</label><br>
+        <input type="text" value="<%= pro.modelo%>" name="modelo" class=" agregarP form-control inputs border border-top-0 border-right-0 border-left-0 " id="modelo" placeholder="Modelo del auto">
+      </div>
+      <div class="form-group">
+        <label for="" class="text-bold">Año</label><br>
+        <input type="text" value="<%= pro.ano%>" name="ano" class=" agregarP form-control inputs border border-top-0 border-right-0 border-left-0 " id="ano" placeholder="Año">
+      </div>
+      <div class="form-group">
+        <label for="" class="text-bold">Motor</label><br>
+        <input type="text" value="<%= pro.motor%>" name="motor" class=" agregarP form-control inputs border border-top-0 border-right-0 border-left-0 " id="motor" placeholder="Modelo de tu motor">
+      </div>
+      <div class="form-group">
+        <label for="" class="text-bold">Descripcion</label><br>
+        <input type="text" value="<%= pro.descripcion%>" name="descripcion" class=" agregarP form-control inputs border border-top-0 border-right-0 border-left-0 " id="descripcion" placeholder="Agrege una escripcion">
+      </div>
+      <div class="form-group">
+        <label for="" class="text-bold">id</label><br>
+        <input type="text" value="<%= pro.idProducto%> " name="idProducto" class=" agregarP form-control inputs border border-top-0 border-right-0 border-left-0 " id="idProducto" placeholder="Agrege el id">
+      </div>
+      <div class="form-group">
+        <label for="" class="text-bold">Url de imagen</label><br>
+        <input type="text" value="<%= pro.imagen%>" name="imagen" class="form-control inputs border border-top-0 border-right-0 border-left-0" id="imagen" placeholder="Agrege imagen "><br><br>
+
+        <input type="submit" class="btn btn-block border-primary inputs" id="" placeholder=" ">
+      </div>
+
+   
+
+    </form>
+    
+  </div>
+
+
+
+
+
+
+        <script src="../../js/jquery-3.3.1.min.js" ></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="../../js/popper.min.js" ></script>
+        <script src="../../js/bootstrap.min.js"></script>
+
+  </body>
+</html>
