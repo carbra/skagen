@@ -4,7 +4,7 @@
   "description": "Proyecto de Punto de venta piezas automotrices",
   "main": "index.js",
   "scripts": {
-    "start": " src/index.js",
+    "start": "node src/index.js",
     "dev": "nodemon --exec babel-node --presets env,stage-2 bin/dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
