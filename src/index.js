@@ -13,8 +13,8 @@ const ApisAdmin = require('./routes/admin');
 const ApisShop = require('./routes/shop');
 
  // importamos la configuacion de mongoose para que se conectecte a la base de datos
- 
-import './mongoose/controller'  
+
+import './mongoose/controller.js'  
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
