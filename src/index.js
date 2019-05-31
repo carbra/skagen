@@ -12,7 +12,9 @@ const ApisAdmin = require('./routes/admin');
 // importacion de endpoint de shop
 const ApisShop = require('./routes/shop');
 
-import './mongoose/controller'   // importamos la configuacion de mongoose para que se conectecte a la base de datos
+ // importamos la configuacion de mongoose para que se conectecte a la base de datos
+ 
+import './mongoose/controller'  
 
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static(path.join(__dirname, 'public')));
